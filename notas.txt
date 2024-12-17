@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+int main () {
+	int a, b, sum;
+	printf("Digite o primeiro numero: ");
+	scanf("%lf", &a);
+
+		printf("Digite o segundo numero: ");
+		scanf("%lf", &b);
+	sum = a + b;
+
+	printf("A soma total é: %2f\n", sum);
+	return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main () {
+    int num1, num2, indice;
+    char vetor[2] = {0, 1};
+    vetor[0] = "Numero %d maior", num1;
+    vetor[1] = "Numero %d maior", num2;
+    printf("Digite um valor: ");
+    scanf("%d\n", &num1);
+
+    printf("Digite um segundo valor: ");
+    scanf("%d\n", &num2);
+    
+    indice = (vetor[0] + vetor[1] + abs(vetor[0] - vetor[1])) / 2;
+
+    printf("O maior valor entre esses numeros: %d\n", indice);
+    return 0;
+
+}
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int num1, num2;
+
+    printf("Digite o primeiro valor: ");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo numero: ");
+    scanf("%d", &num2);
+
+    int maior = max(num1, num2);
+    int menor = min(num1, num2);
+
+    // Imprimir a sequência de números (ainda a ser implementada)
+
+    printf("O maior numero entre os dois: %d\n", maior);
+    return 0;
+}
